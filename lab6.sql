@@ -2,12 +2,12 @@ drop table if exists Movie;
 drop table if exists Reviewer;
 drop table if exists Rating;
 
-/* Create the schema for our tables */
+
 create table Movie(mID int, title text, year int, director text);
 create table Reviewer(rID int, name text);
 create table Rating(rID int, mID int, stars int, ratingDate date);
 
-/* Populate the tables with our data */
+
 insert into Movie values(101, 'Gone with the Wind', 1939, 'Victor Fleming');
 insert into Movie values(102, 'Star Wars', 1977, 'George Lucas');
 insert into Movie values(103, 'The Sound of Music', 1965, 'Robert Wise');
